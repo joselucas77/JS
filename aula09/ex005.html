@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+           background: rgb(68, 125, 199);
+           color: white;
+           font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1> <!--O DOM significa Document Object Model ou Modelo de Objetos para Documentos-->
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">  Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1] //Selecionando um elemento por Marca
+        document.write('<br>Está escrito assim: </br>' + p1.innerText)
+        //document.write("<br>Esá escrito assim: </br>" + p1.innerHTML)
+        var corpo = window.document.body
+        var d = document.getElementById('msg')
+        var d = window.document.querySelector('div#msg') //'div#' é pra representar uma ID, já o 'div.' é pra representar uma Classe.
+        d.style.color = 'blue'
+    </script>
+</body>
+</html>

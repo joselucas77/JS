@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(111, 111, 153);
+            color: white; /*comentario em CSS*/
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>olá, mundo!</h1> <!--comentario em html-->
+    <p>Já me livrei da maldicão!!</p>
+    <script>
+        /* Tratamento de dados
+
+        String -> Número
+        - Number()
+        - Number.parseInt() converte String para número Inteiro
+        - Number.parseFloat() converte de String para número Real(com vírgula)
+        
+        Número -> String
+        String()
+        n.toString()
+        
+        */
+           var n1 = Number(window.prompt('Digite um número: ')) // Retorna string
+           var n2 = Number(window.prompt('Digite outro número: ')) // Retorna string
+           var s = n1 + n2
+           window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // concatenação
+           // (number + number) para adição
+           // (string + string) para concatenação
+    </script>
+</body>
+</html>
