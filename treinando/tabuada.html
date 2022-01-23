@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            background-color: grey;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 70px;
+
+        }
+
+        input#produto {
+            font: normal 18pt Arial;
+            width: 100px;
+            border-radius: 10px;
+        }
+
+        div#res{
+           margin-top: 20px;
+           background-color: skyblue;
+           width: 183px;
+        }
+        
+    </style>
+    <script>
+        //prompt('Informe um número para fazer a tabuada: ')
+        function produto(){
+        var tn1 = document.getElementById('txtn1')
+        var res = document.getElementById('res')
+        var n = Number(tn1.value)
+        var p1 = n * 1
+        var p2 = n * 2
+        var p3 = n * 3
+        var p4 = n * 4
+        var p5 = n * 5
+        var p6 = n * 6
+        var p7 = n * 7
+        var p8 = n * 8
+        var p9 = n * 9
+        var p10 = n * 10
+        res.innerHTML =`${n} x 1 =  ${p1}<br>
+                        ${n} x 2 =  ${p2}<br>
+                        ${n} x 3 =  ${p3}<br>
+                        ${n} x 4 =  ${p4}<br>
+                        ${n} x 5 =  ${p5}<br>
+                        ${n} x 6 =  ${p6}<br>
+                        ${n} x 7 =  ${p7}<br>
+                        ${n} x 8 =  ${p8}<br>
+                        ${n} x 9 =  ${p9}<br>
+                        ${n} x 10 = ${p10}`
+        }
+    </script>
+</head>
+<body>
+    <h1>Digite um número:</h1>
+    <input type="number" name="txtn1" id="txtn1"> <!--o input serve para criar uma caixa, a qual vc pode pegar uma informacão do usuario-->
+    <input type="button" value="produto" onclick="produto()" id="produto">
+    <div id="res"></div>
+</body>
+</html>
