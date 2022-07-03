@@ -1,0 +1,137 @@
+* Comandos de janela *
+
+window.alert() -> serve para exibir uma mesagem em janela
+window.confirm() => igual ao .alert, porém com opção de OK e Cancelar
+window.promtp() =>  igual ao .alert, porém você pode escrever algo
+
+* Date Types(tipos primitivos) *
+
+number
+-infinity
+-NaN
+string
+boolean
+null
+indefined
+object
+-Array
+function
+
+* guardando variáveis *
+
+var nome = window.prompt('Qual é seu nome?')
+let nome = "      "
+
+* Transformando dados em outros tipos *
+
+String -> Number
+Number.parseInt(n)
+Number.parseFloat(n)
+Number(n)
+
+Number -> String
+String(n)
+n.toString()
+
+* Formatação String *
+
+var s = 'JavaScript'
+'Eu estou aprendendo s' // não faz interpolação
+'Eu estou aprendendo' + s // usa concatenação
+`Eu estou aprendendo ${s}` // usa template string
+
+s.length // diz quantos caracteres a string tem
+s.toUpperCase() // tudo para letras "maiúsculas"
+s.tolowerCase() // tudo para letras "minúsculas"
+
+* Formatação de Números *
+
+var n1 = 1543.5
+n1.toFixed(2) // para formatação de duas casas decimais
+n1.tofixed(2).replace('.',',') // para trocar o '.' por ','
+n1.toLocalString('pt-BR', {style: 'currency', currency: 'BRL}) // formatação de um numero para forma monetária "real"
+n1.toLocalString('pt-BR', {style: 'currency', currency: 'USD}) // formatação de um numero para forma monetária "dólar"
+n1.toLocalString('pt-BR', {style: 'currency', currency: 'EUR}) // formatação de um numero para forma monetária "euro"
+
+* Operadores *
+
+aritiméticos
+"+" // soma
+"-" // sobtração
+"*" // multiplicação
+"/" // divisão
+"%" // resto da divisão
+"**" // potência(elevado)
+atribuição
+relacionais
+lógicos
+ternário
+
+** Precendência **
+
+()
+**
+* / %
++ -
+
+* Auto-atribuição *
+
+var n = 3
+n = n + 4 (3+4)
+n += 4 (3+4)
+n = 7
+
+* Incremento e Decremento *
+
+var x = 5
+x++ => x = 6
+x-- => x = 4
+
+* Relacionais *
+
+>
+<
+>=
+<=
+==
+!=
+
+* Identidade *
+
+5 == 5 -> true
+5 == '5' -> true
+5 === '5' -> false
+
+* Lógico *
+
+!   <!--negacão-->
+&&  <!--conjucão-->
+||  <!--disjuncão-->
+
+* Ternário *
+
+?
+:
+
+exemplo: teste ? true : false 
+  media >= 7 ? 'APROVADO' : 'REPROVADO'
+
+* DOM *
+Principais classes
+
+-Por Marca
+//var p1 = window.document.getElementsByTagName('p')[0] //Selecionando um elemento por Marca
+//document.write('Está escrito assim: ' + p1.innerText) //com o final innerText a formatacão "Incompleta", já com com o final innerHTML mostra até o <strong>.
+-Por ID
+//var p1 = window.document.getElementById('') //Selecionar elementos com ID.
+-Por Nome
+//var p1 = window.document.getElementsByName('')[] //Selecionando poor Nome do elemento
+-por Classe
+//var p1 = window.document.getElementsByClassName('') //Selecionando por Classe do elemento
+-Por Seletor
+//var d = window.document.querySelector('div#msg') //'div#' é pra representar uma ID, já o 'div.' é pra representar uma Classe.
+
+//window.document.write(window.document.URL) //Mostra a URL do site.
+//window.document.write(window.navigator.appName) //Mostra em qual navegar vc esta
+
+* Eventos DOM *
